@@ -1491,9 +1491,9 @@ var app = (function () {
 
 		triggersindicator = new TriggersIndicator({
 				props: {
-					l1Down: /*stepNum*/ ctx[2] > 1,
+					l1Down: /*stepNum*/ ctx[2] == 1 || /*stepNum*/ ctx[2] == 3,
 					isActive: /*isActive*/ ctx[0],
-					r1Down: /*stepNum*/ ctx[2] == 1 || /*stepNum*/ ctx[2] == 3
+					r1Down: /*stepNum*/ ctx[2] == 2 || /*stepNum*/ ctx[2] == 3
 				}
 			});
 
@@ -1580,9 +1580,9 @@ var app = (function () {
 			},
 			p(ctx, [dirty]) {
 				const triggersindicator_changes = {};
-				if (dirty & /*stepNum*/ 4) triggersindicator_changes.l1Down = /*stepNum*/ ctx[2] > 1;
+				if (dirty & /*stepNum*/ 4) triggersindicator_changes.l1Down = /*stepNum*/ ctx[2] == 1 || /*stepNum*/ ctx[2] == 3;
 				if (dirty & /*isActive*/ 1) triggersindicator_changes.isActive = /*isActive*/ ctx[0];
-				if (dirty & /*stepNum*/ 4) triggersindicator_changes.r1Down = /*stepNum*/ ctx[2] == 1 || /*stepNum*/ ctx[2] == 3;
+				if (dirty & /*stepNum*/ 4) triggersindicator_changes.r1Down = /*stepNum*/ ctx[2] == 2 || /*stepNum*/ ctx[2] == 3;
 				triggersindicator.$set(triggersindicator_changes);
 				const cardinalkeysset0_changes = {};
 				if (dirty & /*isActive*/ 1) cardinalkeysset0_changes.isActive = /*isActive*/ ctx[0];
@@ -1979,24 +1979,6 @@ var app = (function () {
 				"N"
 			],
 			[
-				"w",
-				"c",
-				"s",
-				"u",
-				"W",
-				"C",
-				"S",
-				"U",
-				"y",
-				"f",
-				"v",
-				"m",
-				"Y",
-				"f",
-				"V",
-				"M"
-			],
-			[
 				"l",
 				"p",
 				"d",
@@ -2014,29 +1996,29 @@ var app = (function () {
 				"B",
 				"G"
 			],
+			[
+				"w",
+				"c",
+				"s",
+				"u",
+				"W",
+				"C",
+				"S",
+				"U",
+				"y",
+				"f",
+				"v",
+				"m",
+				"Y",
+				"F",
+				"V",
+				"M"
+			],
 			["z", "", "", "j", "Z", "", "", "J", "q", "x", "", "", "Q", "X", "", ""]
 		];
 
 		let level2Labels = [
 			["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-			[
-				"1",
-				"2",
-				"3",
-				"4",
-				"!",
-				"@",
-				"#",
-				"$",
-				"5",
-				"6",
-				"7",
-				"8",
-				"%",
-				"^",
-				"&",
-				"*"
-			],
 			[
 				"9",
 				"0",
@@ -2054,6 +2036,24 @@ var app = (function () {
 				":",
 				"}",
 				"{"
+			],
+			[
+				"1",
+				"2",
+				"3",
+				"4",
+				"!",
+				"@",
+				"#",
+				"$",
+				"5",
+				"6",
+				"7",
+				"8",
+				"%",
+				"^",
+				"&",
+				"*"
 			],
 			["-", "/", "=", "`", "_", "?", "+", "~", "⇥", "\\", "", "", "⇤", "|", "", ""]
 		];

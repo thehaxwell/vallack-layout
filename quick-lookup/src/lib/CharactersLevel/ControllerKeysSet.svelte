@@ -10,7 +10,7 @@
 </script>
 
 <div class="label">
-  <TriggersIndicator l1Down={stepNum>1} {isActive} r1Down={stepNum==1 || stepNum ==3}/>
+  <TriggersIndicator l1Down={stepNum==1 || stepNum ==3} {isActive} r1Down={stepNum==2 || stepNum ==3}/>
 </div>
 <div class="keys-set-container" class:active={isActive}>
   <div class="flex">

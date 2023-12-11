@@ -35,6 +35,31 @@ on_click = {visit_layer="first-level-step-2"}
 on_double_click = {move_to_or_visit_layer="second-level-step-1"}
 
 [[layers]]
+id = "first-level-step-3"
+[layers.switches]
+right_upper_south = {on_click = {keyboard = {key = "B"}}}
+right_upper_east = {on_click = {keyboard = {key = "Return"}}}
+right_upper_north = {on_click = {keyboard = {key = "K"}}}
+right_upper_west = {on_click = {keyboard = {key = "G"}}}
+left_upper_north = {on_click = {keyboard = {key = "L"}}}
+left_upper_south = {on_click = {keyboard = {key = "D"}}}
+left_upper_west = {on_click = {keyboard = {key = "Escape"}}}
+left_upper_east = {on_click = {keyboard = {key = "P"}}}
+left_lower_north = {on_click = {keyboard = {key = "l"}}}
+left_lower_south = {on_click = {keyboard = {key = "d"}}}
+left_lower_west = {on_click = {keyboard = {key = "Backspace"}}}
+left_lower_east = {on_click = {keyboard = {key = "p"}}}
+right_lower_north = {on_click = {keyboard = {key = "k"}}}
+right_lower_south = {on_click = {keyboard = {key = "b"}}}
+right_lower_west = {on_click = {keyboard = {key = "g"}}}
+right_lower_east = {on_click = {keyboard = {key = "Space"}}}
+left_trigger_2 = {on_click = {show_quick_lookup_window_on_hold = {}}}
+right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
+
+[layers.switches.right_trigger]
+on_click = {visit_layer="first-level-step-4"}
+
+[[layers]]
 id = "first-level-step-2"
 [layers.switches]
 right_upper_south = {on_click = {keyboard = {key = "V"}}}
@@ -59,30 +84,6 @@ right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
 [layers.switches.left_trigger]
 on_click = {visit_layer="first-level-step-4"}
 
-[[layers]]
-id = "first-level-step-3"
-[layers.switches]
-right_upper_south = {on_click = {keyboard = {key = "B"}}}
-right_upper_east = {on_click = {keyboard = {key = "Return"}}}
-right_upper_north = {on_click = {keyboard = {key = "K"}}}
-right_upper_west = {on_click = {keyboard = {key = "G"}}}
-left_upper_north = {on_click = {keyboard = {key = "L"}}}
-left_upper_south = {on_click = {keyboard = {key = "D"}}}
-left_upper_west = {on_click = {keyboard = {key = "Escape"}}}
-left_upper_east = {on_click = {keyboard = {key = "P"}}}
-left_lower_north = {on_click = {keyboard = {key = "l"}}}
-left_lower_south = {on_click = {keyboard = {key = "d"}}}
-left_lower_west = {on_click = {keyboard = {key = "Backspace"}}}
-left_lower_east = {on_click = {keyboard = {key = "p"}}}
-right_lower_north = {on_click = {keyboard = {key = "k"}}}
-right_lower_south = {on_click = {keyboard = {key = "b"}}}
-right_lower_west = {on_click = {keyboard = {key = "g"}}}
-right_lower_east = {on_click = {keyboard = {key = "Space"}}}
-left_trigger_2 = {on_click = {show_quick_lookup_window_on_hold = {}}}
-right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
-
-[layers.switches.right_trigger]
-on_click = {visit_layer="first-level-step-4"}
 
 [[layers]]
 id = "first-level-step-4"
@@ -124,31 +125,6 @@ on_click = {visit_layer="second-level-step-2"}
 on_double_click = {move_to_or_visit_layer="first-level-step-1"}
 
 [[layers]]
-id = "second-level-step-2"
-[layers.switches]
-right_upper_south = {on_click = {keyboard = {key = "&"}}}
-right_upper_east = {on_click = {keyboard = {key = "^"}}}
-right_upper_north = {on_click = {keyboard = {key = "%"}}}
-right_upper_west = {on_click = {keyboard = {key = "*"}}}
-left_upper_north = {on_click = {keyboard = {key = "!"}}}
-left_upper_south = {on_click = {keyboard = {key = "#"}}}
-left_upper_west = {on_click = {keyboard = {key = "$"}}}
-left_upper_east = {on_click = {keyboard = {key = "@"}}}
-left_lower_north = {on_click = {keyboard = {key = "1"}}}
-left_lower_south = {on_click = {keyboard = {key = "3"}}}
-left_lower_west = {on_click = {keyboard = {key = "4"}}}
-left_lower_east = {on_click = {keyboard = {key = "2"}}}
-right_lower_north = {on_click = {keyboard = {key = "5"}}}
-right_lower_south = {on_click = {keyboard = {key = "7"}}}
-right_lower_west = {on_click = {keyboard = {key = "8"}}}
-right_lower_east = {on_click = {keyboard = {key = "6"}}}
-left_trigger_2 = {on_click = {show_quick_lookup_window_on_hold = {}}}
-right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
-
-[layers.switches.left_trigger]
-on_click = {visit_layer="second-level-step-4"}
-
-[[layers]]
 id = "second-level-step-3"
 [layers.switches]
 right_upper_south = {on_click = {keyboard = {key = "}"}}}
@@ -171,6 +147,31 @@ left_trigger_2 = {on_click = {show_quick_lookup_window_on_hold = {}}}
 right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
 
 [layers.switches.right_trigger]
+on_click = {visit_layer="second-level-step-4"}
+
+[[layers]]
+id = "second-level-step-2"
+[layers.switches]
+right_upper_south = {on_click = {keyboard = {key = "&"}}}
+right_upper_east = {on_click = {keyboard = {key = "^"}}}
+right_upper_north = {on_click = {keyboard = {key = "%"}}}
+right_upper_west = {on_click = {keyboard = {key = "*"}}}
+left_upper_north = {on_click = {keyboard = {key = "!"}}}
+left_upper_south = {on_click = {keyboard = {key = "#"}}}
+left_upper_west = {on_click = {keyboard = {key = "$"}}}
+left_upper_east = {on_click = {keyboard = {key = "@"}}}
+left_lower_north = {on_click = {keyboard = {key = "1"}}}
+left_lower_south = {on_click = {keyboard = {key = "3"}}}
+left_lower_west = {on_click = {keyboard = {key = "4"}}}
+left_lower_east = {on_click = {keyboard = {key = "2"}}}
+right_lower_north = {on_click = {keyboard = {key = "5"}}}
+right_lower_south = {on_click = {keyboard = {key = "7"}}}
+right_lower_west = {on_click = {keyboard = {key = "8"}}}
+right_lower_east = {on_click = {keyboard = {key = "6"}}}
+left_trigger_2 = {on_click = {show_quick_lookup_window_on_hold = {}}}
+right_trigger_2 = {on_click = {visit_layer="shortcuts-level"}}
+
+[layers.switches.left_trigger]
 on_click = {visit_layer="second-level-step-4"}
 
 [[layers]]
