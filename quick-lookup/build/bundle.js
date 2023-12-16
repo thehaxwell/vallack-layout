@@ -1736,7 +1736,7 @@ var app = (function () {
 		};
 	}
 
-	// (56:4) {#each level2Labels as labels,idx}
+	// (58:4) {#each level2Labels as labels,idx}
 	function create_each_block$1(ctx) {
 		let div;
 		let controllerkeysset;
@@ -2014,7 +2014,7 @@ var app = (function () {
 				"V",
 				"M"
 			],
-			["z", "", "", "j", "Z", "", "", "J", "q", "x", "", "", "Q", "X", "", ""]
+			["z", "", "", "j", "Z", "", "", "J", "q", "x", "", "", "Q", "X", "()", ""]
 		];
 
 		let level2Labels = [
@@ -2055,7 +2055,24 @@ var app = (function () {
 				"&",
 				"*"
 			],
-			["-", "/", "=", "`", "_", "?", "+", "~", "⇥", "\\", "", "", "⇤", "|", "", ""]
+			[
+				"-",
+				"/",
+				"=",
+				"`",
+				"_",
+				"?",
+				"+",
+				"~",
+				"⇥",
+				"\\",
+				"",
+				"",
+				"⇤",
+				"|",
+				"()",
+				""
+			]
 		];
 
 		$$self.$$set = $$props => {

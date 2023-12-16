@@ -2,6 +2,10 @@
   export let labels = [];
   export let isActive = false;
 
+  $: {
+    if labels
+    // CHECKPOINT
+  }
 </script>
 
 <div class="switches-container" class:active={isActive}>

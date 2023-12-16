@@ -18,7 +18,7 @@
     ],
     [
       "z","","","j",    "Z","","","J",
-      "q","x","","",    "Q","X","","",
+      "q","x","","",    "Q","X","()","",
     ],
   ];
 
@@ -37,7 +37,7 @@
     ],
     [
     "-","/","=","`",  "_","?","+","~",
-    "⇥","\\","","",  "⇤","|","","",
+    "⇥","\\","","",  "⇤","|","()","",
     ],
   ];
 
@@ -46,7 +46,9 @@
 <div>
   <div class="flex">
     {#each level1Labels as labels,idx}
-      <div class="m-1"><ControllerKeysSet isActive={idx==activeLayer} {labels} stepNum={idx}/></div>
+      <div class="m-1">
+        <ControllerKeysSet isActive={idx==activeLayer} {labels} stepNum={idx}
+         /></div>
     {/each}
   </div>
   <div class="instructions">
