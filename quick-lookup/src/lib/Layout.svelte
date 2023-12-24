@@ -1,5 +1,5 @@
 <script>
-  import ControllerKeysSet from "./ControllerKeysSet.svelte";
+  import Row from "./Row.svelte";
 
   export let activeLayer = 0;
 
@@ -44,32 +44,14 @@
 </script>
 
 <div>
-  <div class="flex">
-    {#each level1Labels as labels,idx}
-      <div class="m-1">
-        <ControllerKeysSet isActive={idx==activeLayer} {labels} stepNum={idx}
-         /></div>
-    {/each}
-  </div>
+  <Row labelsSet={level1Labels} activeLayer={activeLayer}/>
   <div class="instructions">
     Double-click <span class="l1">L1</span> or <span class="r1">R1</span> to go up or down (Hold to go back on release)
   </div>
-  <div class="flex">
-    {#each level2Labels as labels,idx}
-      <div class="m-1">
-        <ControllerKeysSet isActive={idx+4==activeLayer} {labels} stepNum={idx}
-        isMouseControls={idx==0}/></div>
-    {/each}
-  </div>
+  <Row labelsSet={level2Labels} activeLayer={activeLayer} mouseControlsAtIndex={0} layerIndexFrom={4}/>
 </div>
 
 <style>
-  .flex {
-    display: flex;
-  }
-  .m-1 {
-    margin: 0.2rem;
-  }
   .instructions {
     margin-top: 1rem;
     text-align: center;

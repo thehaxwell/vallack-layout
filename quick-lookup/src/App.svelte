@@ -1,9 +1,11 @@
 <script>
   import {listen} from './events';
-  import CharactersLevel from "./lib/CharactersLevel/index.svelte";
   import ShortcutsLayer from "./lib/ShortcutsLevel/index.svelte";
 	import { fly } from 'svelte/transition';
+  //TODO: make Inter font work
   import './lib/fonts/fonts.css';
+
+  import Layout from "./lib/Layout.svelte";
 
   let activeLayer = 0;
 
@@ -12,9 +14,10 @@
   });
 </script>
 
+
 <div class="flex justify-center">
   <div class="m-1">
-    <CharactersLevel {activeLayer}/>
+    <Layout activeLayer={activeLayer} />
   </div>
   <div class="shortcuts-indicator-container" class:active={activeLayer === 8}>
     Hold <strong>R2</strong> to go to shortcuts mode
