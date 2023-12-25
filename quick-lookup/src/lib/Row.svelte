@@ -12,7 +12,6 @@
   {#each labelsSet as labels,idx}
     <div class="m-1">
       <Layer isActive={idx+layerIndexFrom==activeLayer} 
-             isMouseControls={idx+layerIndexFrom==4} 
              {labels} 
              isVisitedByHoldingL1={[1,3,5,7].includes(idx+layerIndexFrom)}
              isVisitedByHoldingR1={[2,3,6,7].includes(idx+layerIndexFrom)} />

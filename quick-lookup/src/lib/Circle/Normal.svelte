@@ -1,16 +1,16 @@
 <script>
-  export let labels = [];
+  export let labels = { north: "", east: "", south: "", west: "", };
   export let isActive = false;
 </script>
 
 <div class="switches-container" class:active={isActive}>
     <div class="flex">
-      <div class="kbd">{labels[0]}</div>
-      <div class="kbd">{labels[1]}</div>
+      <div class="kbd">{labels.north}</div>
+      <div class="kbd">{labels.east}</div>
     </div>
     <div class="flex">
-      <div class="kbd">{labels[3]}</div>
-      <div class="kbd">{labels[2]}</div>
+      <div class="kbd">{labels.west}</div>
+      <div class="kbd">{labels.south}</div>
     </div>
 </div>
 
