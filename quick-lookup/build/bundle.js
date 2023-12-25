@@ -3131,33 +3131,6 @@ var app = (function () {
 				leftUpper: { special: "directional-arrows" },
 				leftLower: { special: "mouse-cursor" }
 			},
-			// 5
-			{
-				rightUpper: {
-					north: "\"",
-					east: ":",
-					south: "}",
-					west: "{"
-				},
-				rightLower: {
-					north: "'",
-					east: ";",
-					south: "]",
-					west: "["
-				},
-				leftUpper: {
-					north: "(",
-					east: ")",
-					south: ">",
-					west: "<"
-				},
-				leftLower: {
-					north: "9",
-					east: "0",
-					south: ".",
-					west: ","
-				}
-			},
 			// 6
 			{
 				rightUpper: {
@@ -3183,6 +3156,33 @@ var app = (function () {
 					east: "2",
 					south: "3",
 					west: "4"
+				}
+			},
+			// 5
+			{
+				rightUpper: {
+					north: "\"",
+					east: ":",
+					south: "}",
+					west: "{"
+				},
+				rightLower: {
+					north: "'",
+					east: ";",
+					south: "]",
+					west: "["
+				},
+				leftUpper: {
+					north: "(",
+					east: ")",
+					south: ">",
+					west: "<"
+				},
+				leftLower: {
+					north: "9",
+					east: "0",
+					south: ".",
+					west: ","
 				}
 			},
 			// 7

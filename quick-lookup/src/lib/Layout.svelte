@@ -45,19 +45,19 @@
 		  leftUpper: { special: "directional-arrows", },
       leftLower: { special: "mouse-cursor", },
     },
-    // 5
-    {
-      rightUpper: { north: "\"", east: ":", south: "}", west: "{", },
-      rightLower: { north: "'", east: ";", south: "]", west: "[", },
-      leftUpper: { north: "(", east: ")", south: ">", west: "<", },
-      leftLower: { north: "9", east: "0", south: ".", west: ",", },
-    },
     // 6
     {
       rightUpper: { north: "%", east: "^", south: "&", west: "*", },
       rightLower: { north: "5", east: "6", south: "7", west: "8", },
       leftUpper: { north: "!", east: "@", south: "#", west: "$", },
       leftLower: { north: "1", east: "2", south: "3", west: "4", },
+    },
+    // 5
+    {
+      rightUpper: { north: "\"", east: ":", south: "}", west: "{", },
+      rightLower: { north: "'", east: ";", south: "]", west: "[", },
+      leftUpper: { north: "(", east: ")", south: ">", west: "<", },
+      leftLower: { north: "9", east: "0", south: ".", west: ",", },
     },
     // 7
     {
