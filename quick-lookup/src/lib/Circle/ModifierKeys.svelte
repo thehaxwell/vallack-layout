@@ -5,12 +5,12 @@
 
 <div class="switches-container" class:active={isActive}>
     <div class="flex">
-      <div class="kbd">Win</div>
-      <div class="kbd">Shift</div>
+      <div class="kbd">Win <br> only</div>
+      <div class="kbd">+ <br> Shift</div>
     </div>
     <div class="flex">
-      <div class="kbd">Alt</div>
-      <div class="kbd">Ctrl</div>
+      <div class="kbd">+ <br> Alt</div>
+      <div class="kbd">Alt <br> only</div>
     </div>
 </div>
 
@@ -41,7 +41,7 @@
       border-bottom-width: 2px;
       min-height: 1.8rem;
       min-width: 1.8rem;
-      margin: .1em;
+      margin: .1rem;
       rotate: -45deg;
   }
   .flex {

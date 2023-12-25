@@ -2,19 +2,25 @@
   import Layer from "./Layer.svelte";
 
   export let activeLayer = 0;
-  export let layerIndexFrom = 0;
 
   export let labelsSet = [];
 
+  // TODO: use this for readability
+  // $: isInShortcutsMode = activeLayer > 7;
 </script>
 
 <div class="flex">
-  {#each labelsSet as labels,idx}
+  {#each labelsSet as labels}
     <div class="m-1">
-      <Layer isActive={idx+layerIndexFrom==activeLayer} 
-             {labels} 
-             isVisitedByHoldingL1={[1,3,5,7].includes(idx+layerIndexFrom)}
-             isVisitedByHoldingR1={[2,3,6,7].includes(idx+layerIndexFrom)} />
+      <Layer 
+             isActive={labels.activeLayerIndexes.includes(activeLayer)} 
+             labels = {
+              activeLayer > 7 && labels.hasOwnProperty("shortcutsMode") 
+                ? labels.shortcutsMode 
+                : labels.normalMode
+             }
+             isVisitedByHoldingL1={labels.isVisitedByHoldingL1}
+             isVisitedByHoldingR1={labels.isVisitedByHoldingR1} />
     </div>
   {/each}
 </div>

@@ -3,6 +3,7 @@
   import DirectionArrows from "./Circle/DirectionalArrows.svelte";
   import MouseCursor from "./Circle/MouseCursor.svelte";
   import MouseScroll from "./Circle/MouseScroll.svelte";
+  import ModifierKeys from "./Circle/ModifierKeys.svelte";
 
   export let isActive = false;
   export let type = "";
@@ -17,6 +18,8 @@
     <MouseCursor {isActive} />
   {:else if type == "directional-arrows"}
     <DirectionArrows {isActive} />
+  {:else if type == "shortcuts-modifier-keys"}
+    <ModifierKeys {isActive} />
   {:else}
     (Unknown special circle)
   {/if}

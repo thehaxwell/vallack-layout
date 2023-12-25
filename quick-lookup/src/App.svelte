@@ -1,7 +1,7 @@
 <script>
   import {listen} from './events';
-  import ShortcutsLayer from "./lib/ShortcutsLevel/index.svelte";
-	import { fly } from 'svelte/transition';
+//  import ShortcutsLayer from "./lib/ShortcutsLevel/index.svelte";
+//	import { fly } from 'svelte/transition';
   //TODO: make Inter font work
   import './lib/fonts/fonts.css';
 
@@ -19,14 +19,14 @@
   <div class="m-1">
     <Layout activeLayer={activeLayer} />
   </div>
-  <div class="shortcuts-indicator-container" class:active={activeLayer === 8}>
-    Hold <strong>R2</strong> to go to shortcuts mode
+  <div class="shortcuts-indicator-container" class:active={activeLayer > 7}>
+    Hold <strong>R2</strong> to go to Ctrl mode
   </div>
-  {#if activeLayer === 8}
-    <div class="overlay" transition:fly={{x:50}}>
-      <ShortcutsLayer/>
-    </div>
-  {/if}
+  <!-- {#if activeLayer === 8} -->
+  <!--   <div class="overlay" transition:fly={{x:50}}> -->
+  <!--     <ShortcutsLayer/> -->
+  <!--   </div> -->
+  <!-- {/if} -->
 </div>
 
 <style>
